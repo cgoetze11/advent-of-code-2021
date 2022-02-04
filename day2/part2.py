@@ -2,7 +2,7 @@ def calculate_position(input_file):
     with open(input_file, "rb") as input_file:
         content_list = input_file.readlines()
 
-    horizantal, = aim = depth = 0
+    horizantal = aim = depth = 0
     for val in content_list:
         direction, num = val.decode().strip().split(" ")
         if direction == 'forward':
