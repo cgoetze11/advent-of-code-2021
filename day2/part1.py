@@ -10,6 +10,6 @@ def calculate_position(input_file):
         direction, num = val.decode().strip().split(" ")
         distance[direction] += int(num)
 
-    return (0 + distance["down"] - distance["up"]) * distance["forward"]
+    return (distance["down"] - distance["up"]) * distance["forward"]
 
 print(calculate_position('day2/input.txt'))
